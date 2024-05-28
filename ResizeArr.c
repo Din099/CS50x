@@ -16,7 +16,7 @@ int  main(void)
     int *tmp = malloc(4*sizeof(int));
     if(tmp == NULL)
     {
-        free(list);
+        free(list);//if tmp is not valid, before returning the control[Getting out of main] free the memory allocated to list.
         return 1;
     }
 
